@@ -54,56 +54,56 @@ table {
 
 #black-header {
   display: flex;
-  background-color: yellow;
-  height: 500px;
+  background-color: black;
+  height: 30px;
 }
 
 #fixed-header {
   display: flex;
-  background-color: blue;
-  height: 500px;
+  background-color: yellow;
+  height: 60px;
 }
 
 #top-photos {
   display: flex;
   background-color: red;
-  height: 500px;
+  height: 400px;
 }
 
 #latest-news {
   display: flex;
   background-color: green;
-  height: 500px;
+  height: 450px;
 }
 
 #latest-funding {
   display: flex;
   background-color: orange;
-  height: 500px;
+  height: 200px;
 }
 
 #articles {
   display: flex;
   background-color: purple;
-  height: 500px;
+  height: 400px;
 }
 
 #latest-deals {
   display: flex;
   background-color: pink;
-  height: 500px;
+  height: 400px;
 }
 
 #socials-etc {
   display: flex;
   background-color: cyan;
-  height: 500px;
+  height: 100px;
 }
 
 footer {
   display: flex;
   background-color: magenta;
-  height: 500px;
+  height: 100px;
 }
 
 /*# sourceMappingURL=index.css.map */

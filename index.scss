@@ -1,43 +1,43 @@
 @use "reset";
 
-@mixin sitediv($color) {
+@mixin sitediv($color, $size) {
 	display: flex;
-    background-color: $color;
-    height: 500px;
+	background-color: $color;
+	height: $size;
 }
 
 #black-header {
-	@include sitediv(yellow);
+	@include sitediv(black, 30px);
 }
 
 #fixed-header {
-	@include sitediv(blue);
+	@include sitediv(yellow, 60px);
 }
 
 #top-photos {
-	@include sitediv(red);
+	@include sitediv(red, 400px);
 }
 
 #latest-news {
-	@include sitediv(green);
+	@include sitediv(green, 450px);
 }
 
 #latest-funding {
-	@include sitediv(orange);
+	@include sitediv(orange, 200px);
 }
 
 #articles {
-	@include sitediv(purple);
+	@include sitediv(purple, 400px);
 }
 
 #latest-deals {
-	@include sitediv(pink);
+	@include sitediv(pink, 400px);
 }
 
 #socials-etc {
-	@include sitediv(cyan);
+	@include sitediv(cyan, 100px);
 }
 
 footer {
-	@include sitediv(magenta);
+	@include sitediv(magenta, 100px);
 }
