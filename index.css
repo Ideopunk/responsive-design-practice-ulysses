@@ -1,0 +1,109 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#black-header {
+  display: flex;
+  background-color: yellow;
+  height: 500px;
+}
+
+#fixed-header {
+  display: flex;
+  background-color: blue;
+  height: 500px;
+}
+
+#top-photos {
+  display: flex;
+  background-color: red;
+  height: 500px;
+}
+
+#latest-news {
+  display: flex;
+  background-color: green;
+  height: 500px;
+}
+
+#latest-funding {
+  display: flex;
+  background-color: orange;
+  height: 500px;
+}
+
+#articles {
+  display: flex;
+  background-color: purple;
+  height: 500px;
+}
+
+#latest-deals {
+  display: flex;
+  background-color: pink;
+  height: 500px;
+}
+
+#socials-etc {
+  display: flex;
+  background-color: cyan;
+  height: 500px;
+}
+
+footer {
+  display: flex;
+  background-color: magenta;
+  height: 500px;
+}
+
+/*# sourceMappingURL=index.css.map */

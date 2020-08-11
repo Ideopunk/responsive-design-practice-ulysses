@@ -1,0 +1,43 @@
+@use "reset";
+
+@mixin sitediv($color) {
+	display: flex;
+    background-color: $color;
+    height: 500px;
+}
+
+#black-header {
+	@include sitediv(yellow);
+}
+
+#fixed-header {
+	@include sitediv(blue);
+}
+
+#top-photos {
+	@include sitediv(red);
+}
+
+#latest-news {
+	@include sitediv(green);
+}
+
+#latest-funding {
+	@include sitediv(orange);
+}
+
+#articles {
+	@include sitediv(purple);
+}
+
+#latest-deals {
+	@include sitediv(pink);
+}
+
+#socials-etc {
+	@include sitediv(cyan);
+}
+
+footer {
+	@include sitediv(magenta);
+}
