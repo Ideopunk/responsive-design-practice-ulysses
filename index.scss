@@ -11,11 +11,28 @@
 }
 
 #fixed-header {
-	@include sitediv(yellow, 60px);
+	@include sitediv(yellow, 80px);
 }
 
 #top-photos {
-	@include sitediv(red, 400px);
+	@include sitediv(red, 75vh);
+	display: block;
+	max-height: 560px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	overflow: hidden;
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	#top-photos {
+		height: 60vh;
+	}
+}
+
+@media (max-width: 767px) {
+	#top-photos {
+		height: 90vh;
+	}
 }
 
 #latest-news {
@@ -41,3 +58,35 @@
 footer {
 	@include sitediv(magenta, 100px);
 }
+
+// Child Elements
+
+.top-photo {
+	height: 50%;
+	width: 33%;
+	float: left;
+	background-color: yellowgreen;
+	border-radius: 5px;
+	margin: 1px;
+}
+
+.top-photo:first-child {
+	height: 100%;
+	width: 65%;
+}
+
+@media (max-width: 767px) {
+	.top-photo {
+		min-height: 30vh;
+		width: 100%;
+		height: auto;
+		float: none;
+	}
+
+	.top-photo:first-child {
+		height: auto;
+		width: 100%;
+	}
+}
+
+// .top-photo

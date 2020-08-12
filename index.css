@@ -61,15 +61,30 @@ table {
 #fixed-header {
   display: flex;
   background-color: yellow;
-  height: 60px;
+  height: 80px;
 }
 
 #top-photos {
   display: flex;
   background-color: red;
-  height: 400px;
+  height: 75vh;
+  display: block;
+  max-height: 560px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  overflow: hidden;
 }
 
+@media (max-width: 1023px) and (min-width: 768px) {
+  #top-photos {
+    height: 60vh;
+  }
+}
+@media (max-width: 767px) {
+  #top-photos {
+    height: 90vh;
+  }
+}
 #latest-news {
   display: flex;
   background-color: green;
@@ -104,6 +119,34 @@ footer {
   display: flex;
   background-color: magenta;
   height: 100px;
+}
+
+.top-photo {
+  height: 50%;
+  width: 33%;
+  float: left;
+  background-color: yellowgreen;
+  border-radius: 5px;
+  margin: 1px;
+}
+
+.top-photo:first-child {
+  height: 100%;
+  width: 65%;
+}
+
+@media (max-width: 767px) {
+  .top-photo {
+    min-height: 30vh;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  .top-photo:first-child {
+    height: auto;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
