@@ -52,23 +52,69 @@ table {
   border-spacing: 0;
 }
 
-#black-header {
+.card-ul {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 2px solid black;
+  box-sizing: border-box;
+}
+
+.card-li {
+  flex: 0 0 25%;
+  max-width: 25%;
+  background-color: pink;
+  border: 2px solid grey;
+  box-sizing: border-box;
+  height: 200px;
+}
+
+@media (max-width: 1023px) {
+  .card-li {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+}
+@media (max-width: 767px) {
+  .card-li {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 72px;
+  }
+}
+.card-div {
+  border-radius: 5px;
+  background-color: red;
+}
+
+#wrapper {
+  max-width: 1192px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#black-header {
+  display: block;
   background-color: black;
   height: 30px;
 }
 
 #fixed-header {
-  display: flex;
+  display: block;
   background-color: yellow;
   height: 80px;
 }
 
 #top-photos {
-  display: flex;
-  background-color: red;
-  height: 75vh;
   display: block;
+  background-color: red;
+  display: block;
+  height: 75vh;
   max-height: 560px;
   box-sizing: border-box;
   border: 2px solid black;
@@ -86,37 +132,41 @@ table {
   }
 }
 #latest-news {
-  display: flex;
+  display: block;
   background-color: green;
-  height: 450px;
+  display: block;
+}
+
+#latest-news > h2 {
+  color: red;
+  display: inline;
 }
 
 #latest-funding {
-  display: flex;
+  display: block;
   background-color: orange;
   height: 200px;
 }
 
 #articles {
-  display: flex;
+  display: block;
   background-color: purple;
   height: 400px;
 }
 
 #latest-deals {
-  display: flex;
-  background-color: pink;
-  height: 400px;
+  display: block;
+  background-color: red;
 }
 
 #socials-etc {
-  display: flex;
+  display: block;
   background-color: cyan;
   height: 100px;
 }
 
 footer {
-  display: flex;
+  display: block;
   background-color: magenta;
   height: 100px;
 }
