@@ -283,7 +283,6 @@ h2 {
   left: 24px;
   top: 24px;
   font-size: 80px;
-  border: 1px solid red;
 }
 
 .top-photo p.date {
@@ -376,22 +375,8 @@ h3.big-title {
   padding-left: 12px;
 }
 
-#wrapper {
-  max-width: 1192px;
-  padding-left: 20px;
-  padding-right: 20px;
-  box-sizing: border-box;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#wrapper > * {
-  margin-bottom: 2em;
-}
-
 #latest-funding {
-  display: block;
-  background-color: orange;
+  margin-bottom: 56px;
 }
 
 .funding-divs {
@@ -406,12 +391,11 @@ h3.big-title {
 }
 .funding-div {
   flex: 0 0 25%;
+  padding: 12px;
   max-width: 25%;
-  background-color: pink;
   min-height: 60px;
   border-radius: 5px;
-  border: 1px solid black;
-  height: 200px;
+  height: 300px;
   box-sizing: border-box;
 }
 
@@ -437,6 +421,80 @@ h3.big-title {
     display: none;
   }
 }
+.funding-div > * {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+}
+
+.fund-1 img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 10.67px;
+}
+
+.fund-1 h3 {
+  background-color: #ff4422;
+  color: white;
+  display: block;
+  font-family: Avalon, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.fund-1 p {
+  display: block;
+  font-family: Avalon, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: rgba(255, 68, 34, 0.08);
+}
+
+.fund-1 p:last-child {
+  font-family: Shentox, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.fund-2 {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #555;
+  background-color: #fffaf8;
+}
+
+.fund-2 li:first-child {
+  margin-bottom: 6.5px;
+}
+
+.fund-3 {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  background-color: #fffaf8;
+}
+
+.fund-3 {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+#wrapper {
+  max-width: 1192px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wrapper > * {
+  margin-bottom: 2em;
+}
+
 #articles {
   display: block;
   background-color: purple;

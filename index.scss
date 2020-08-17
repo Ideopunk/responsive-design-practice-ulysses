@@ -5,6 +5,7 @@
 @use "variables";
 @use "topphotos";
 @use "latest-news";
+@use "funding";
 
 #wrapper {
 	max-width: 1192px;
@@ -20,55 +21,6 @@
 }
 
 
-#latest-funding {
-	@include variables.sitediv(orange);
-}
-
-.funding-divs {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-@media (max-width: 767px) {
-	.funding-divs {
-		display: block;
-	}
-}
-
-.funding-div {
-	flex: 0 0 25%;
-	max-width: 25%;
-	background-color: pink;
-	min-height: 60px;
-	border-radius: 5px;
-	border: 1px solid black;
-	height: 200px;
-	box-sizing: border-box;
-}
-
-@media (max-width: 1023px) {
-	.funding-div {
-		flex: 0 0 33%;
-		max-width: 33%;
-		height: 150px;
-	}
-
-	.funding-div:last-child {
-		display: none;
-	}
-}
-
-@media (max-width: 767px) {
-	.funding-div {
-		flex: 0 0 auto;
-		max-width: 100%;
-		height: 200px;
-	}
-
-	.funding-div:last-child {
-		display: none;
-	}
-}
 
 #articles {
 	@include variables.sitediv(purple);
