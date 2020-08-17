@@ -9,8 +9,9 @@
     flex: 0 0 25%;
     max-width: 25%;
     box-sizing: border-box;
-    height: 200px;
+    height: 220px;
     padding: 12px;
+    margin-bottom: 3px;
 }
 
 
@@ -24,6 +25,7 @@
 .card-credit {
     color: #AAAAAA;
     padding-top: 4px;
+    // margin-bottom: 3px;
     font-size: 13px;
     font-family: "ARS Maquette","Helvetica Neue",Arial,sans-serif;
 }
@@ -32,6 +34,7 @@ h4 {
     font-size: 16px;
     font-family: "ARS Maquette","Helvetica Neue",Arial,sans-serif;
     font-weight: 700;
+    margin-bottom: 1px;
 }
 
 @media (max-width: 1023px) {
@@ -49,7 +52,15 @@ h4 {
         height: auto;
         min-height: 72px;
     }
+
+    .card-image {
+        width: 75px;
+        height: 75px;
+        float: left;
+        margin-right: 13px;
+    }
 }
+
 
 .card-div {
     border-radius: 5px;
