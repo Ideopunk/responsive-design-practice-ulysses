@@ -4,6 +4,7 @@
 @use "fixedheader";
 @use "variables";
 @use "topphotos";
+@use "latest-news";
 
 #wrapper {
 	max-width: 1192px;
@@ -18,17 +19,6 @@
 	margin-bottom: 2em;
 }
 
-
-
-#latest-news {
-	@include variables.sitediv(green);
-	display: block;
-}
-
-#latest-news > h2 {
-	color: red;
-	display: inline;
-}
 
 #latest-funding {
 	@include variables.sitediv(orange);
@@ -124,9 +114,3 @@ footer {
 	@include variables.sitediv(magenta);
 	height: 100px;
 }
-
-// Child Elements
-
-
-
-// .top-photo

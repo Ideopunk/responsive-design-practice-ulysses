@@ -56,17 +56,35 @@ table {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 2px solid black;
   box-sizing: border-box;
 }
 
 .card-li {
   flex: 0 0 25%;
   max-width: 25%;
-  background-color: pink;
-  border: 2px solid grey;
   box-sizing: border-box;
   height: 200px;
+  padding: 12px;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.card-credit {
+  color: #AAAAAA;
+  padding-top: 4px;
+  font-size: 13px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+}
+
+h4 {
+  font-size: 16px;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1023px) {
@@ -120,6 +138,13 @@ table {
 
 #black-header ul:last-child {
   padding-right: 20px;
+}
+
+h2 {
+  color: #ff4422;
+  font-family: Avalon, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 #fixed-header {
@@ -244,7 +269,7 @@ table {
     width: 100%;
   }
 }
-.top-photo h2 {
+.top-photo h6 {
   position: absolute;
   left: 24px;
   top: 24px;
@@ -319,6 +344,15 @@ h3.big-title {
     font-size: 40px;
   }
 }
+#latest-news {
+  padding-top: 24px;
+  margin-bottom: 56px;
+}
+
+#latest-news h2 {
+  padding-left: 12px;
+}
+
 #wrapper {
   max-width: 1192px;
   padding-left: 20px;
@@ -330,17 +364,6 @@ h3.big-title {
 
 #wrapper > * {
   margin-bottom: 2em;
-}
-
-#latest-news {
-  display: block;
-  background-color: green;
-  display: block;
-}
-
-#latest-news > h2 {
-  color: red;
-  display: inline;
 }
 
 #latest-funding {

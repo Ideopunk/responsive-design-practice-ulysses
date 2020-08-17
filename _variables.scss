@@ -2,3 +2,12 @@
 	display: block;
 	background-color: $color;
 }
+
+$sitered: rgb(255, 68, 34);
+
+h2 {
+	color: $sitered;
+	font-family: Avalon, sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+}
