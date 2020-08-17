@@ -3,6 +3,7 @@
 @use "blackheader";
 @use "fixedheader";
 @use "variables";
+@use "topphotos";
 
 #wrapper {
 	max-width: 1192px;
@@ -17,27 +18,7 @@
 	margin-bottom: 2em;
 }
 
-#top-photos {
-	@include variables.sitediv(red);
-	display: block;
-	height: 75vh;
-	max-height: 560px;
-	box-sizing: border-box;
-	border: 2px solid black;
-	overflow: hidden;
-}
 
-@media (max-width: 1023px) and (min-width: 768px) {
-	#top-photos {
-		height: 60vh;
-	}
-}
-
-@media (max-width: 767px) {
-	#top-photos {
-		height: 90vh;
-	}
-}
 
 #latest-news {
 	@include variables.sitediv(green);
@@ -146,32 +127,6 @@ footer {
 
 // Child Elements
 
-.top-photo {
-	height: 50%;
-	width: 33%;
-	float: left;
-	background-color: yellowgreen;
-	border-radius: 5px;
-	margin: 1px;
-}
 
-.top-photo:first-child {
-	height: 100%;
-	width: 65%;
-}
-
-@media (max-width: 767px) {
-	.top-photo {
-		min-height: 30vh;
-		width: 100%;
-		height: auto;
-		float: none;
-	}
-
-	.top-photo:first-child {
-		height: auto;
-		width: 100%;
-	}
-}
 
 // .top-photo
