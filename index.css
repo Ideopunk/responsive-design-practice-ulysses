@@ -421,6 +421,28 @@ h3.big-title {
     display: none;
   }
 }
+#funding-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#funding-header > div {
+  display: flex;
+  color: #ff4422;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  white-space: pre;
+}
+
+#funding-header > div > p:nth-child(2)::before {
+  content: " | ";
+}
+
+#funding-header > div > p:nth-child(2)::after {
+  content: " | ";
+}
+
 .funding-div > * {
   box-sizing: border-box;
   width: 100%;
