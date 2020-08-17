@@ -6,6 +6,8 @@
 @use "topphotos";
 @use "latest-news";
 @use "funding";
+@use "latest-deals";
+@use "footer";
 
 #wrapper {
 	max-width: 1192px;
@@ -19,8 +21,6 @@
 #wrapper > * {
 	margin-bottom: 2em;
 }
-
-
 
 #articles {
 	@include variables.sitediv(purple);
@@ -53,16 +53,8 @@
 	}
 }
 
-#latest-deals {
-	@include variables.sitediv(red);
-}
-
 #socials-etc {
 	@include variables.sitediv(cyan);
 	height: 100px;
 }
 
-footer {
-	@include variables.sitediv(magenta);
-	height: 100px;
-}

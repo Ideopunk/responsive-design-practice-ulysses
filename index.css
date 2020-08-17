@@ -63,7 +63,6 @@ table {
   flex: 0 0 25%;
   max-width: 25%;
   box-sizing: border-box;
-  height: 220px;
   padding: 12px;
   margin-bottom: 3px;
 }
@@ -538,6 +537,49 @@ h3.big-title {
     height: 40px;
   }
 }
+#latest-deals > header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+#latest-deals > header > p {
+  color: #ff4422;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.deal-image {
+  height: 200px;
+}
+
+@media (max-width: 767px) {
+  .deal-image {
+    height: 75px;
+    width: 75px;
+  }
+}
+footer {
+  text-align: center;
+  background-color: black;
+  padding-top: 39px;
+  padding-bottom: 39px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 3em 0;
+  }
+
+  footer span {
+    display: block;
+  }
+}
+footer > p {
+  color: white;
+}
+
 #wrapper {
   max-width: 1192px;
   padding-left: 20px;
@@ -581,20 +623,9 @@ h3.big-title {
     height: 500px;
   }
 }
-#latest-deals {
-  display: block;
-  background-color: red;
-}
-
 #socials-etc {
   display: block;
   background-color: cyan;
-  height: 100px;
-}
-
-footer {
-  display: block;
-  background-color: magenta;
   height: 100px;
 }
 
