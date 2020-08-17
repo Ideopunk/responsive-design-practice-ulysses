@@ -1,15 +1,13 @@
 @use "reset";
 @use "cards";
-
-@mixin sitediv($color) {
-	display: block;
-	background-color: $color;
-}
+@use "blackheader";
+@use "fixedheader";
+@use "variables";
 
 #wrapper {
 	max-width: 1192px;
-	padding-left: 20px; 
-	padding-right: 20px; 
+	padding-left: 20px;
+	padding-right: 20px;
 	box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,18 +17,8 @@
 	margin-bottom: 2em;
 }
 
-#black-header {
-	@include sitediv(black);
-	height: 30px;
-}
-
-#fixed-header {
-	@include sitediv(yellow);
-	height: 80px;
-}
-
 #top-photos {
-	@include sitediv(red);
+	@include variables.sitediv(red);
 	display: block;
 	height: 75vh;
 	max-height: 560px;
@@ -52,7 +40,7 @@
 }
 
 #latest-news {
-	@include sitediv(green);
+	@include variables.sitediv(green);
 	display: block;
 }
 
@@ -62,7 +50,7 @@
 }
 
 #latest-funding {
-	@include sitediv(orange);
+	@include variables.sitediv(orange);
 }
 
 .funding-divs {
@@ -111,9 +99,8 @@
 	}
 }
 
-
 #articles {
-	@include sitediv(purple);
+	@include variables.sitediv(purple);
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -143,18 +130,17 @@
 	}
 }
 
-
 #latest-deals {
-	@include sitediv(red);
+	@include variables.sitediv(red);
 }
 
 #socials-etc {
-	@include sitediv(cyan);
+	@include variables.sitediv(cyan);
 	height: 100px;
 }
 
 footer {
-	@include sitediv(magenta);
+	@include variables.sitediv(magenta);
 	height: 100px;
 }
 

@@ -1,0 +1,6 @@
+@use "variables";
+
+#fixed-header {
+	@include variables.sitediv(yellow);
+	height: 80px;
+}
