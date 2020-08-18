@@ -125,6 +125,11 @@ h4 {
   align-items: center;
 }
 
+@media (max-width: 767px) {
+  #black-header {
+    display: none;
+  }
+}
 #black-header ul {
   display: flex;
 }
