@@ -1,6 +1,6 @@
 @use "variables";
 
-#fixed-header {
+.fixed-header {
 	@include variables.sitediv(white);
 	height: 78px;
 }
@@ -13,14 +13,14 @@
 	display: none;
 }
 
-#fixed-header > div:first-child {
+.fixed-header > div:first-child {
 	height: 48px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-#fixed-header-ul {
+.fixed-header-ul {
 	display: flex;
 	color: #aaaaaa;
 	display: flex;
@@ -28,12 +28,12 @@
     height: 100%;
 }
 
-#logo {
+.logo {
 	display: none;
 	padding: 0;
 }
 
-#fixed-header-ul > * {
+.fixed-header-ul > * {
 	padding-left: 12px;
 	font-family: Shentox, sans-serif;
 	font-size: 14px;
@@ -41,15 +41,21 @@
 	padding-right: 12px;
 }
 
-#fixed-header-ul > *:first-child {
+@media (max-width: 767px) {
+	.fixed-header-ul > * {
+		display: none;
+	}
+}
+
+.fixed-header-ul > *:first-child {
 	padding: 0;
 }
 
-#fixed-header-ul > *:nth-child(2) {
+.fixed-header-ul > *:nth-child(2) {
 	padding-left: 20px;
 }
 
-#search {
+.search {
 	padding-left: 16px;
 	padding-right: 16px;
     height: 100%;
@@ -59,7 +65,7 @@
     align-items: center;
 }
 
-#search * {
+.search * {
     border: 1px solid red;
 }
 
@@ -68,14 +74,14 @@
 
 
 
-#fixed-header > div:last-child {
+.fixed-header > div:last-child {
 	height: 30px;
 	background-color: #fd3;
 	display: flex;
 	align-items: center;
 }
 
-#fixed-header p {
+.fixed-header p {
 	// padding-left: 126px;
 	padding-left: 20px;
 	font-size: 13px;
