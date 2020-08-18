@@ -5,6 +5,14 @@
 	height: 78px;
 }
 
+.real-fixed {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+	z-index: 1;
+	display: none;
+}
+
 #fixed-header > div:first-child {
 	height: 48px;
 	display: flex;
