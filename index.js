@@ -1,4 +1,5 @@
 const realFixed = document.querySelector(".real-fixed")
+realFixed.style.display = "none";
 
 window.addEventListener("scroll", function (e) {
     if (window.pageYOffset > 32) {
